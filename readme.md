@@ -32,7 +32,7 @@ Der Eintrag ist in der Adafruit Arduino Library für den BNO055 nicht vorhanden 
 Bei der Neukonfigurierung der Achsen muss ein rechtshändiges Koordinatensystem beibehalten werden. Mit der neuen Ausrichtung ist das nicht der Fall, daher müssen zwei Achsenvorzeichen geändert werden.  
 Abbildung 5 zeigt, dass die Z-Achse und die Y-Achse gespiegelt werden müssen. Für diese Achsen ergibt sich die Bitabfolge 011 oder 0x03 in hexadezimal (Abb. 8). Der Eintrag ist in der Adafruit Library als REMAP_SIGN_P4 vorhanden.
 
-<img src="https://github.com/georgesipp/IntiMarionette/blob/main/images/axis_sign_puppet.png" align="center">
+<img src="https://github.com/georgesipp/IntiMarionette/blob/main/images/axis_sign_puppet.png">
  
 Mit Hilfe der folgenden Funktionen aus der Adafruit Library können die Achsen jetzt entsprechend konfiguriert werden:
 ```
