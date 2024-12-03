@@ -42,4 +42,4 @@ bno.setAxisSign(Adafruit_BNO055::REMAP_SIGN_P4);
 ```
 Die Achsen sind jetzt so eingestellt, dass die Rückseite der Sensoren in Richtung des absoluten Nullpunktes zeigen (Abb. 9).
 
-<img src="https://github.com/georgesipp/IntiMarionette/blob/main/images/bno4.png" align="center" width="1500">
+<img src="https://github.com/georgesipp/IntiMarionette/blob/main/images/bno4.png"  width="1500">
