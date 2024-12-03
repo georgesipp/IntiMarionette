@@ -19,6 +19,7 @@ Der BNO055 kann seine Rotation auch als Quaternion ausgeben. Eine Quaternion bes
 Rotation 
 <p>
  <img src="https://github.com/georgesipp/IntiMarionette/blob/main/images/bno1.png" align="right" width="250">
+ <p>
  <img src="https://github.com/georgesipp/IntiMarionette/blob/main/images/bno2.png" align="right" width="250">
 </p>
 
