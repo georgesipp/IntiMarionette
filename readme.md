@@ -7,9 +7,9 @@
 Interface Puppe „Inti“ - BNO055 Sensoren
 
 <details>
-<summary>
+
 <h3> BN055 Rotation</h3>
-</summary>
+
 
 Im BNO055 ist ein Gyroskop, ein Beschleunigungssensor und ein Kompass verbaut. Auf dem Chip wird aus den Werten aller drei Sensoren die Rotation berechnet. Die Rotation wird oft in Eulerschen Winkeln angegeben, also drei Drehung von 0° – 360° entlang der X, Y und Z-Achse. Diese Drehungen werden auch mit Nicken, Rollen und Gieren (pitch, roll, yaw) beschrieben. Die Reihenfolge, in der die Drehung angewendet werden, ist wichtig, um gleiche Rotationen zu erhalten. 
 
