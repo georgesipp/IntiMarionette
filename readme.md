@@ -33,7 +33,7 @@ Bei der Neukonfigurierung der Achsen muss ein rechtshändiges Koordinatensystem 
 Abbildung 5 zeigt, dass die Z-Achse und die Y-Achse gespiegelt werden müssen. Für diese Achsen ergibt sich die Bitabfolge 011 oder 0x03 in hexadezimal (Abb. 8). Der Eintrag ist in der Adafruit Library als REMAP_SIGN_P4 vorhanden.
 
 <img src="https://github.com/georgesipp/IntiMarionette/blob/main/images/axis_sign_puppet.png">
- 
+
 Mit Hilfe der folgenden Funktionen aus der Adafruit Library können die Achsen jetzt entsprechend konfiguriert werden:
 
 ```
