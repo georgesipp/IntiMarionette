@@ -35,6 +35,7 @@ Abbildung 5 zeigt, dass die Z-Achse und die Y-Achse gespiegelt werden müssen. F
 <img src="https://github.com/georgesipp/IntiMarionette/blob/main/images/axis_sign_puppet.png">
  
 Mit Hilfe der folgenden Funktionen aus der Adafruit Library können die Achsen jetzt entsprechend konfiguriert werden:
+
 ```
 bno.setAxisRemap(Adafruit_BNO055::REMAP_CONFIG_PUPPET_BODY);
 bno.setAxisSign(Adafruit_BNO055::REMAP_SIGN_P4);
