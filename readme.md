@@ -14,7 +14,6 @@ Die Verwendung von Eulerschen Winkeln eignet sich für die Inti-Marionette aus v
 <img src="https://github.com/georgesipp/IntiMarionette/blob/main/images/pitch_roll_yaw.png" align="center">
 
 Der BNO055 kann seine Rotation auch als Quaternion ausgeben. Eine Quaternion beschreibt die Rotation entlang einer bestimmen Achse und wird mit W, X, Y, Z dargestellt. Die Werte der Quaternion lassen sich nicht intuitiv interpretieren (How to think about Quaternions without your brain exploding). Anders als bei den Eulerschen Winkeln, steht die Anwendung der Rotationen fest. Daher können die Werte der Achsen nicht einfach neu zugeordnet werden, sondern die Achsen des Sensors selbst müssen neu konfiguriert werden.
- 
 
 |Rotation |  |
 |-|-|
@@ -22,6 +21,7 @@ Der BNO055 kann seine Rotation auch als Quaternion ausgeben. Eine Quaternion bes
 |Bei der Inti-Marionette sind die Sensoren auf der Rückseite angebracht, die Achsen müssen also neu zugeordnet werden. Die Blume zeigt wo für die Sensoren oben sein soll. Die Rückseite der Sensoren soll jetzt in Richtung des Nullpunkts zeigen (Abb. 4).| <img src="https://github.com/georgesipp/IntiMarionette/blob/main/images/bno2.png"  width="1500">|
 |Die Achsen können jetzt einfach getauscht werden, sodass sie sich wieder am ursprünglichen Koordinatensystem orientieren. Die X-Achse wird zur Z-Achse, die Z-Achse wird zur Y-Achse, die Y-Achse wird zur X-Achse (Abb. 5). Das BNO055 Datenblatt zeigt, wie die Achsen neu konfiguriert werden können (Abb. 6). Für unsere Konfiguration bedeutet das folgende Bit-Konfiguration: Z = 00, Y = 10, X = 01 | <img src="https://github.com/georgesipp/IntiMarionette/blob/main/images/bno3.png"  width="1500">|
 
+<img src="https://github.com/georgesipp/IntiMarionette/blob/main/images/BNO055%20Achsen.png" align="center">
 
 Das AXIS_MAP_CONFIG Register kann nur als Hexadezimalzahl beschrieben werden. Die Bitabfolge 001001 wird hexadezimal als 0x09 geschrieben. 
  
