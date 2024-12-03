@@ -18,11 +18,9 @@ Der BNO055 kann seine Rotation auch als Quaternion ausgeben. Eine Quaternion bes
 
 Rotation 
 
-Die Achsen des BNO055 lassen sich mit den Registern AXIS_MAP_CONFIG und AXIS_MAP_SIGN neu zuordnen. Die Standard-Achseneinstellung ist auf dem BNO055 verzeichnet (Abb. 3). Wenn der Sensor waagerecht und auf der Y-Achse Richtung Norden ausgerichtet ist, zeigt der Sensor auf den absoluten Nullpunkt. | <img src="https://github.com/georgesipp/IntiMarionette/blob/main/images/bno1.png"  width="250">
-
+Die Achsen des BNO055 lassen sich mit den Registern AXIS_MAP_CONFIG und AXIS_MAP_SIGN neu zuordnen. Die Standard-Achseneinstellung ist auf dem BNO055 verzeichnet (Abb. 3). Wenn der Sensor waagerecht und auf der Y-Achse Richtung Norden ausgerichtet ist, zeigt der Sensor auf den absoluten Nullpunkt. | <img src="https://github.com/georgesipp/IntiMarionette/blob/main/images/bno1.png"  width="500">
 -|-
-Bei der Inti-Marionette sind die Sensoren auf der Rückseite angebracht, die Achsen müssen also neu zugeordnet werden. Die Blume zeigt wo für die Sensoren oben sein soll. Die Rückseite der Sensoren soll jetzt in Richtung des Nullpunkts zeigen (Abb. 4).| <img src="https://github.com/georgesipp/IntiMarionette/blob/main/images/bno2.png"  width="250">
-
+Bei der Inti-Marionette sind die Sensoren auf der Rückseite angebracht, die Achsen müssen also neu zugeordnet werden. Die Blume zeigt wo für die Sensoren oben sein soll. Die Rückseite der Sensoren soll jetzt in Richtung des Nullpunkts zeigen (Abb. 4).| <img src="https://github.com/georgesipp/IntiMarionette/blob/main/images/bno2.png"  width="500">
  
  
 Die Achsen können jetzt einfach getauscht werden, sodass sie sich wieder am ursprünglichen Koordinatensystem orientieren. Die X-Achse wird zur Z-Achse, die Z-Achse wird zur Y-Achse, die Y-Achse wird zur X-Achse (Abb. 5). Das BNO055 Datenblatt zeigt, wie die Achsen neu konfiguriert werden können (Abb. 6). Für unsere Konfiguration bedeutet das folgende Bit-Konfiguration:
