@@ -16,11 +16,11 @@ Die Verwendung von Eulerschen Winkeln eignet sich für die Inti-Marionette aus v
 Der BNO055 kann seine Rotation auch als Quaternion ausgeben. Eine Quaternion beschreibt die Rotation entlang einer bestimmen Achse und wird mit W, X, Y, Z dargestellt. Die Werte der Quaternion lassen sich nicht intuitiv interpretieren (How to think about Quaternions without your brain exploding). Anders als bei den Eulerschen Winkeln, steht die Anwendung der Rotationen fest. Daher können die Werte der Achsen nicht einfach neu zugeordnet werden, sondern die Achsen des Sensors selbst müssen neu konfiguriert werden.
  
 
-Rotation <img src="https://github.com/georgesipp/IntiMarionette/blob/main/images/bno1.png" align="right" width="500">
+Rotation 
+<img src="https://github.com/georgesipp/IntiMarionette/blob/main/images/bno1.png" align="right" width="250">
 Die Achsen des BNO055 lassen sich mit den Registern AXIS_MAP_CONFIG und AXIS_MAP_SIGN neu zuordnen. Die Standard-Achseneinstellung ist auf dem BNO055 verzeichnet (Abb. 3). Wenn der Sensor waagerecht und auf der Y-Achse Richtung Norden ausgerichtet ist, zeigt der Sensor auf den absoluten Nullpunkt. 
-
-
-Bei der Inti-Marionette sind die Sensoren auf der Rückseite angebracht, die Achsen müssen also neu zugeordnet werden. <img src="https://github.com/georgesipp/IntiMarionette/blob/main/images/bno2.png" align="right" width="500">
+<img src="https://github.com/georgesipp/IntiMarionette/blob/main/images/bno2.png" align="right" width="250">
+Bei der Inti-Marionette sind die Sensoren auf der Rückseite angebracht, die Achsen müssen also neu zugeordnet werden. 
 Die Blume zeigt wo für die Sensoren oben sein soll. Die Rückseite der Sensoren soll jetzt in Richtung des Nullpunkts zeigen (Abb. 4).
  
  
