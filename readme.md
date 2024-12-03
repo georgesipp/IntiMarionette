@@ -24,7 +24,7 @@ Der BNO055 kann seine Rotation auch als Quaternion ausgeben. Eine Quaternion bes
 
  Z| Y| X
  -|-|-
-00| 10| 01  |
+00| 10| 01  
 
 Das AXIS_MAP_CONFIG Register kann nur als Hexadezimalzahl beschrieben werden. Die Bitabfolge 001001 wird hexadezimal als 0x09 geschrieben. 
  
