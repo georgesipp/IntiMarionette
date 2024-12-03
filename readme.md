@@ -5,6 +5,10 @@
 
 
 Interface Puppe „Inti“ - BNO055 Sensoren
+
+<details>
+<summary>BN055 Rotation</summary>
+
 Im BNO055 ist ein Gyroskop, ein Beschleunigungssensor und ein Kompass verbaut. Auf dem Chip wird aus den Werten aller drei Sensoren die Rotation berechnet. Die Rotation wird oft in Eulerschen Winkeln angegeben, also drei Drehung von 0° – 360° entlang der X, Y und Z-Achse. Diese Drehungen werden auch mit Nicken, Rollen und Gieren (pitch, roll, yaw) beschrieben. Die Reihenfolge, in der die Drehung angewendet werden, ist wichtig, um gleiche Rotationen zu erhalten. 
 
 <img src="https://github.com/georgesipp/IntiMarionette/blob/main/images/llustrates-the-principle-of-gimbal-lock-The-outer-blue-frame-represents-the-x-axis-the.png" align="center">
@@ -43,3 +47,4 @@ bno.setAxisSign(Adafruit_BNO055::REMAP_SIGN_P4);
 Die Achsen sind jetzt so eingestellt, dass die Rückseite der Sensoren in Richtung des absoluten Nullpunktes zeigen (Abb. 9).
 
 <img src="https://github.com/georgesipp/IntiMarionette/blob/main/images/bno4.png" width="1500">
+</details>
