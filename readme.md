@@ -1,17 +1,17 @@
 
-### Motion Capture für Marionetten (und andere Puppen)
+# Motion Capture für Marionetten (und andere Puppen)
 In dieser Anleitung erfahren Sie, wie echte Gelenke in die digitale Welt übertragen. „Inti“, die Interface Marionette nutzt diese Technik um ihren digitalen Avatar zu steuern. 
 
-# Aufbau
+### Aufbau
 Ein Mikrocontroller an der Puppe liest die Daten der Sensoren aus. Über das OSC Protokoll werden die Daten dann vom Mikrocontroller an den Computer gesendet. Jeder Sensor hat eine persönliche Adresse, also einen Knochen, den er an der Puppe steuert. Wenn die einzelnen Glieder sich entsprechend der Sensoren drehen, dann imitiert die digitale Puppe die Bewegung von Inti.  (Grafik Aufbau)
 
-# Hardware
+### Hardware
 Als Mikrocontroller eignet sich ein ESP32, er ist günstig und hat einen WIFI Chip verbaut. Für Inti haben wir 10 BNO055 Sensoren verwendet: Körper, Kopf und jeweils zwei für Arme und Beine. Die Sensoren kommunizieren über das I²C Protokoll. Wenn wir den ADR Pin auf der Rückseite des Sensors verlöten, können wir die I²C Adresse von 0x28 auf 0x29 ändern. Damit können wir jeweils zwei Sensoren in Reihe schalten, wenn wir mehr Sensoren nutzen wollen kann ein Multiplexer genutzt werden. Um uns weiteres Löten zu ersparen können wir das Qwiic Stecker System nutzen. Die BNO055 kann man direkt mit Anschluss bestellen, sodass wir nur noch zusammenstecken müssen. Für die Stromzufuhr reicht ein kleiner Akku, den wir an der Puppe befestigen können, aus. 
 
-# Software
+### Software
 In der BNO055_MUX_DaisyChain_OSC.ino Datei befindet sich der Code für den ESP. Hier muss das Netzwerk eingetragen werden, sowie die IP des Computers, an den wir die Daten schicken wollen. Außerdem kann die Anzahl der Sensoren und ihre OSC-Adresse angepasst werden. Am Computer kann dann die Blenderdatei geöffnet werden.
 
-# Blender -> genaue Erklärung, Screenshots, Julians Addon, 
+### Blender -> genaue Erklärung, Screenshots, Julians Addon, 
 
 
 Interface Puppe „Inti“ - BNO055 Sensoren
